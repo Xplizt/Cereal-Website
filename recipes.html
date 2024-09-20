@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/BallparkWeiner/stylesheet.css">
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" style="color: var(--red)" onclick="showMenu()"></i>
+    </nav>
+    <h1>Recipes</h1>
+</section>
+
+<!-- recipe content -->
+<section class="recipe">
+    <div class="recipe-box">
+        <div class="recipe-img">
+            <img src="images/recipes/smore.jpg">
+        </div>
+        <div class="recipe-det">
+            <h4>Almost S'mores</h4>
+            <p>Top VKellogg’s Frosted Flakes with milk, dark chocolate chips and mini-marshmallows. No campfire required!<br><br>Serving Size: 1<br>Prep Time: 5 Min</p>
+            <a href="#" onclick="window.location.href='smores.html';">LEARN HOW TO MAKE IT</a>
+        </div>
+    </div>
+
+    <div class="recipe-box">
+        <div class="recipe-img">
+            <img src="images/recipes/tuna.jpg">
+        </div>
+        <div class="recipe-det">
+            <h4>Baked Tuna Croquettes</h4>
+            <p>This oven-baked version of tuna croquettes contains less fat, but all the flavor and crunch of traditional croquettes.<br><br>Serving Size: 4<br>Prep Time: 30 Min</p>
+            <a href="#" onclick="window.location.href='tuna.html';">LEARN HOW TO MAKE IT</a>
+        </div>
+    </div>
+
+    <div class="recipe-box">
+        <div class="recipe-img">
+            <img src="images/recipes/burger.jpg">
+        </div>
+        <div class="recipe-det">
+            <h4>Black Bean Burgers</h4>
+            <p>Is it black magic? Maybe. We bet you'll be so enchanted with these burgers that you'll never miss the meat. Serve a platter to your family and watch them disappear right before your very eyes.<br><br>Serving Size: 4<br>Prep Time: 15 Min</p>
+            <a href="#" onclick="window.location.href='burger.html';">LEARN HOW TO MAKE IT</a>
+        </div>
+    </div>
+
+    <div class="recipe-box">
+        <div class="recipe-img">
+            <img src="images/recipes/chews.jpg">
+        </div>
+        <div class="recipe-det">
+            <h4>Choco-Nut Chews</h4>
+            <p>A cookie that's so chocolaty rich it's almost like eating candy!<br><br>Serving Size: 48<br>Prep Time: 75 Min</p>
+            <a href="#" onclick="window.location.href='chews.html';">LEARN HOW TO MAKE IT</a>
+        </div>
+    </div>
+
+    <div class="recipe-box">
+        <div class="recipe-img">
+            <img src="images/recipes/parfait.jpg">
+        </div>
+        <div class="recipe-det">
+            <h4>Cocoa Yogurt Parfait</h4>
+            <p>Whether it's for breakfast or snack time, your kids will love the layers and layers of creamy, fruity, chocolatey goodness in this parfait.<br><br>Serving Size: 2<br>Prep Time: 10 Min</p>
+            <a href="#" onclick="window.location.href='parfait.html';">LEARN HOW TO MAKE IT</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>© 1906 - 2024 <span class="kelloggs">VKellogg's</span></h4>
+    <p>All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-youtube-play"></i>
+    </div>
+
+</section>
+
+
+<!-- JavaScript for Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/BallparkWeiner/stylesheet.css">
+<body>
+<section class="singular-products">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" style="color: var(--red)" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<section class="srecipe">
+
+            <div class="recipe-col">
+                <h1><span style="color:red">Black Bean Burgers</span></h1>
+                    <div class="serving">
+                        <i class="fa fa-clock-o"></i><p> 15 Minutes | </p>
+                        <i class="fa fa-cutlery"></i><p> 4 Servings</p>
+                    </div>
+            </div>
+            <div class="recipe-col">
+                <img src="images/recipes/burger.jpg">
+            </div>
+            <div class="row-recipe">
+                <div class="recipe-ing">
+                    <h1>Ingridients</h1>
+                    <p>• 1 cup finely chopped onion <br>
+                        • 3 cloves garlic, minced <br>
+                        • 4 teaspoons vegetable oil, divided <br>
+                        • 1 can (15 oz.) black beans, rinsed and drained <br>
+                        • 1 teaspoon cumin <br>
+                        • 1/8 teaspoon salt <br>
+                        • 1 egg, beaten <br>
+                        • 2 cups VKellogg's All-Bran Complete Wheat Flakes cereal <br>
+                        • 1/4 cup chopped pecans <br>
+                        • 1/3 cup salsa</p>
+                </div>
+                <div class="recipe-dir">
+                    <h1>Directions</h1>
+                    <p>
+                        1. In large nonstick skillet cook onion and garlic in 2 teaspoons of oil until tender. <br><br>
+                        2. In food processor bowl combine onion mixture, beans, cumin and salt. Cover and process until smooth. In medium bowl stir together bean mixture, egg, cereal and pecans. Shape into four 1/2-inch thick patties. <br><br>
+                        3. In same skillet heat remaining 2 teaspoons oil until sizzling. In skillet cook patties over medium-high heat for 5 minutes or until lightly browned, turning once. Serve with salsa.
+                        </p>
+                </div>
+            </div>
+
+    
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>© 1906 - 2024 <span class="kelloggs">VKellogg's</span></h4>
+    <p>All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-youtube-play"></i>
+    </div>
+
+</section>
+
+
+<!-- JavaScript for Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+</body>
+</html>

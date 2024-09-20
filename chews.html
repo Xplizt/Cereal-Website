@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/BallparkWeiner/stylesheet.css">
+<body>
+<section class="singular-products">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" style="color: var(--red)" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<section class="srecipe">
+
+            <div class="recipe-col">
+                <h1><span style="color:red">Choco-Nut Chews</span></h1>
+                    <div class="serving">
+                        <i class="fa fa-clock-o"></i><p> 75 Minutes | </p>
+                        <i class="fa fa-cutlery"></i><p> 48 Servings</p>
+                    </div>
+            </div>
+            <div class="recipe-col">
+                <img src="images/recipes/chews.jpg">
+            </div>
+            <div class="row-recipe">
+                <div class="recipe-ing">
+                    <h1>Ingridients</h1>
+                    <p>• 1 package (12 oz., 2 cups) semi-sweet chocolate morsels, melted <br>
+                        • 1 can (14 oz.) sweetened condensed milk <br>
+                        • 2 teaspoons vanilla <br>
+                        • 4 cups VKellogg's Corn Flakes cereal or 1 cup VKellogg's Corn Flake Crumbs Pecan halves</p>
+                </div>
+                <div class="recipe-dir">
+                    <h1>Directions</h1>
+                    <p>
+                        1. In medium mixing bowl, combine chocolate morsels, condensed milk and vanilla. Mix in crumbs. Immediately drop by level tablespoon onto baking sheets coated with cooking spray. Place pecan half on each cookie, pressing slightly. Do not let batter stand before baking. <br><br>
+                        2. Bake at 350° F about 10 minutes or until dull crust forms. Remove immediately from baking sheets. Cool on wire racks. Store in airtight container.
+                    </p>
+                </div>
+            </div>
+
+    
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>© 1906 - 2024 <span class="kelloggs">VKellogg's</span></h4>
+    <p>All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-youtube-play"></i>
+    </div>
+
+</section>
+
+
+<!-- JavaScript for Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+
+</body>
+</html>

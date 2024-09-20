@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKellogg's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/BallparkWeiner/stylesheet.css">
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="recipes.html">RECIPES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" style="color: var(--red)" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<!-- contact us -->
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Park Rd, Trafford Park, Stretford</h5>
+                    <p>Manchester M32, United Kingdom</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>1-877-453-5837</h5>
+                    <p>Monday - Friday 9:00 am - 6:00 pm EST</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>inquiry@vkelloggs.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+              <input type="text" placeholder="Enter your first name" id="firstName" name="firstName" required>
+              <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+              <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+          
+              <h4>Inquiry Nature:</h4>
+              <div class="radio-group">  <input type="radio" id="complaint" name="inquiryNature" value="complaint">
+                <label for="complaint">Complaint</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="suggestion" name="inquiryNature" value="suggestion">
+                <label for="suggestion">Suggestion</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="inquiry" name="inquiryNature" value="inquiry">
+                <label for="inquiry">Inquiry</label>
+              </div>
+              <textarea name="description" id="description" rows="8" placeholder="Message" required></textarea>
+              <button type="submit" class="hero-btn red-btn" id="form-button">Submit</button>
+            </form>
+          </div>
+          
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>© 1906 - 2024 <span class="kelloggs">VKellogg's</span></h4>
+    <p>All rights reserved.</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-youtube-play"></i>
+    </div>
+
+</section>
+
+<!-- JavaScript for Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+
+</script>
+<script src="validation.js"></script>
+</body>
+</html>
